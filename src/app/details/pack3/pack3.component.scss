@@ -1,0 +1,76 @@
+ion-card {
+    background-color: #333; // Couleur d'arrière-plan sombre pour les packs
+    margin-bottom:10%;
+    ion-card-title {
+      color: #FFED00; // Couleur jaune pour les titres "PACK 1", "PACK 2" et "PACK 3"
+      margin-left:37%;
+
+    }
+  
+    ion-card-content {
+      color: #fff; // Couleur blanche pour le contenu des cartes
+      background:#FFED00;
+    }
+  }
+  ion-title{
+    font-family: Georgia, serif;
+
+  }
+  ion-text{
+    font-size: 35px;
+    margin-left:1%;
+    color: #FFED00;
+    font-family: Georgia, serif;
+
+  }
+
+  ion-header {
+    ion-toolbar {
+      --background: rgb(65, 59, 59);
+      color: black; /* Couleur du texte du titre */
+      height: 100%;
+      ion-buttons[slot="start"] {
+        --background: white;
+
+        ion-button {
+          --background: white;
+          --box-shadow: 0 2px 4px rgba(255, 255, 0, 0.3);
+          --ion-color-primary: #FFED00;
+        }
+      }
+    }
+  }
+.Titre{
+    margin-left:5%;
+    font-size: 30px;
+    font-family: Georgia, serif;
+
+}
+  .logo-resize {
+    width: 120px;
+    height: 120px;
+    margin-bottom:1.5%;
+    margin-left:45%;
+  }
+
+ion-card-header{
+    margin-left: 3%;
+}
+
+.image-resize{
+    width: 10%;
+    height: 20%;
+}
+
+ion-list {
+    background:#FFED00;
+    ion-label{
+        background: #FFED00;
+        margin-right: 20%;
+        font-family: Georgia, serif;
+    }
+}
+ion-item{
+--background:#FFED00;
+
+}

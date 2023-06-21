@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Radio Details</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon slot="icon-only" name="chevron-back-circle"></ion-icon>
+      </ion-button>      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="radio-details-container" (click)="openRadioDetailsPage()">
+    <ion-img class="radio-image" src="../../assets/imgs/radio-mars.png"></ion-img>
+    <div class="controls">
+      <ion-icon name="play" class="control-icon" (click)="playRadio()" *ngIf="!isPlaying"></ion-icon>
+      <ion-icon name="pause" class="control-icon" (click)="pauseRadio()" *ngIf="isPlaying"></ion-icon>
+      <ion-icon name="stop" class="control-icon" (click)="stopRadio()"></ion-icon>
+    </div>
+    <div class="live-bar" *ngIf="isPlaying"></div>
+  </div>
+</ion-content>

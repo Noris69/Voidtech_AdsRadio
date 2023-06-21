@@ -1,0 +1,119 @@
+.image-size {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .control-icon {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+
+  .card-image {
+    display: block;  
+    width: 70px;
+  }
+
+  
+  .image-size-2 {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+
+  .podcast-card {
+  --background: #ffed00;
+  --border-color: #000;
+  --border-width: 1px;
+  --border-radius: 8px;
+  --ion-background-color: transparent;
+  --ion-color-border: transparent;
+  --ion-color-border-hover: transparent;
+  --ion-color-border-activated: transparent;
+  --ion-color-border-animated: #ff0000;
+  --ion-border-animation-duration: 1s;
+  --ion-border-animation-timing-function: ease-in-out;
+
+  ion-card-content {
+    display: flex;
+    align-items: center;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+
+    ion-thumbnail {
+      margin-right: 12px;
+    }
+
+    .content {
+      flex-grow: 1;
+      text-align: right;
+    }
+
+    .title {
+      font-weight: bold;
+    }
+  }
+}
+
+ion-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #000;
+  font-size: 24px;
+}
+
+// ion-toolbar {
+//   border-bottom-left-radius: 25%;
+//   border-bottom-right-radius: 25%;
+//   --background: #1e1e1e;
+//   color: #ffed00;
+// }
+
+ion-toolbar {
+  overflow: hidden;
+  position: relative;
+}
+
+ion-toolbar::after {
+  content: "Ecoutez la meilleure radio...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(to right, #ffed00, #333333);
+  animation: slideIn 20s linear infinite;
+  white-space: nowrap;
+  color: #000000;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transform: translateX(-50%);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+ion-segment {
+  --background: var(--ion-color-primary);
+  ion-segment-button {
+      --color: var(--ion-color-black);
+      --color-checked: var(--ion-color-black);
+  }
+}

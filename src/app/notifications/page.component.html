@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Notifications</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon slot="icon-only" name="chevron-back-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" scrollY="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-md="6" size-lg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Pack Classique</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-badge color="success">Approuvé</ion-badge>
+            <!-- <ion-list lines="none">
+              <ion-item>
+                <ion-label>Votre Pack Classique a été approuvée</ion-label>
+                <ion-note slot="end">17h25</ion-note>
+              </ion-item>
+              <ion-item>
+                <ion-label>1 semaine</ion-label>
+                <ion-note slot="end">35 spots à 10 500 DHS HT</ion-note>
+              </ion-item>
+            </ion-list> -->
+          </ion-card-content>
+          <ion-footer>
+            <ion-button expand="full" color="primary">
+              <ion-icon name="cart" slot="start"></ion-icon>
+              Payer
+            </ion-button>
+          </ion-footer>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

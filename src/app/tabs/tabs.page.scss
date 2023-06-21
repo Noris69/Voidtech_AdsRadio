@@ -1,0 +1,84 @@
+// .custom-tab-bar {
+//     max-width: 500px;
+//     position: fixed;
+//     left: 24px;
+//     right: 24px;
+//     bottom: calc(var(--ion-safe-area-bottom) + 8px);
+//     margin: auto;
+//     box-shadow: 0 20px 20px rgba(var(--cr-color-background2-rgb), .3);
+//     border: .5px solid transparent;
+//     border-radius: 24px;
+//     background-color: lightgray;
+//     // background: linear-gradient(90deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) border-box;
+//     background: linear-gradient(90deg, #ff914d, #ffed00) border-box;
+  
+//       ion-tab-button {
+//     --color-selected: #ff914d;
+//     --color: #8c8c8c;
+//     // --color-selected: #ff914d;
+//     // --color: #ff914d;
+//   }
+//   }
+  
+//   .custom-tab-bar ion-tab-button {
+//     transition: transform 0.3s ease;
+//   }
+  
+//   .custom-tab-bar ion-tab-button:hover {
+//     transform: scale(1.2);
+//   }
+  
+//   .custom-tab-bar ion-tab-button:active {
+//     transform: scale(1.2);
+//   }
+  
+//   .custom-tab-bar ion-tab-button.tab-selected {
+//     transform: scale(1.5);
+//   }
+  
+  
+ion-tabs {
+  // background: linear-gradient(to right, #ffed00, #333333);
+  // background: var(--ion-color-primary);
+  // background: #000000;
+  background: #ffffff;
+  ion-tab-bar {
+      position: relative;
+      width: 90%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      border-radius: 30px;
+      padding-bottom: 0;
+      border: 1px solid rgba(2, 52, 54, 0.08);
+      overflow: hidden;
+      box-shadow: 0px -5px 10px rgb(3 181 170 / 8%);
+      height: 80px;
+      --background: var(--ion-color-light);
+      ion-tab-button {
+          --background: var(--ion-color-dark);
+          // --color: #BEC2C6;
+          --color: #ffee0071;
+          
+          ion-icon {
+              font-size: 1.9rem;
+          }
+      }
+  }
+}
+
+.custom-tab-bar ion-tab-button {
+      transition: transform 0.3s ease;
+    }
+    
+    .custom-tab-bar ion-tab-button:hover {
+      transform: scale(1.1);
+    }
+    
+    .custom-tab-bar ion-tab-button:active {
+      transform: scale(1.1);
+    }
+    
+    .custom-tab-bar ion-tab-button.tab-selected {
+      transform: scale(1.3);
+    }
+    

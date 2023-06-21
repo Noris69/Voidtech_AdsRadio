@@ -1,0 +1,35 @@
+.radio-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 16px;
+  }
+  
+  .radio-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .control-icon {
+    font-size: 48px;
+    color: white;
+    margin: 0 12px;
+  }
+  
+  .live-bar {
+    width: 75%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff914d, #ffed00);
+    margin-top: 16px;
+  }
+  

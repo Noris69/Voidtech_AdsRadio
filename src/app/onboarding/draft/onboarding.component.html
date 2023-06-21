@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Onboarding
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides [options]="slideOptions" (ionSlideDidChange)="slideChanged()">
+    <ion-slide>
+      <ion-content>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Bienvenue dans notre application de radio</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Page 1 : Description de l'application</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ion-slide>
+  
+    <ion-slide>
+      <ion-content>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Découvrez une variété de stations de radio</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Page 2 : Description des différentes stations de radio disponibles</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ion-slide>
+  
+    <ion-slide>
+      <ion-content>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Commencez à écouter votre musique préférée</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Page 3 : Instructions pour commencer à écouter la radio</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="button-container">
+    <ion-button expand="full" (click)="finishOnboarding()" *ngIf="currentSlide === 3">Terminer</ion-button>
+    <ion-button expand="full" (click)="nextSlide()" *ngIf="currentSlide < 3">Suivant</ion-button>
+  </div>
+</ion-content>

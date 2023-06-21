@@ -1,0 +1,53 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+// .transparent-modal {
+//     background-color: transparent !important;
+//   }
+
+  ion-header.custom-header {
+    --background: #ff914d; /* Couleur orange */
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre portée */
+  }
+  
+
+  ion-content {
+    // --background: #ffee00; /* Couleur jaune */
+    // --background: #fffcf8; /* Couleur jaune */
+    // --background: #fffcf8; /* Couleur jaune */
+    // --background: linear-gradient(90deg, #ffed00, #ff914d);
+    // --background: #e8e8e8; /* Couleur aléatoire */
+    // background-image: url('../src/assets/imgs/b4.png');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // --background: #ffffff; /* Couleur aléatoire */
+    // --background: var(--ion-color-dark);
+    // --background: linear-gradient(to bottom, #000000, #ffee0014);
+    
+
+
+  }
